@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+/* Footer */
+#footer {
+  height: 250px;
+  background-color: var(--color-white-grey);
+  padding-bottom: 20px;
+}
+
+.footer-nav {
+  background-color: var(--color-blue);
+  padding: 5px 100px;
+}
+
+.footer-nav-items {
+  justify-content: space-between;
+}
+
+.footer-nav-items__item {
+
+}
+
+.footer-content {
+  margin: 20px 100px;
+  padding: 20px 0;
+}
+
+.footer-content__left {
+
+}
+
+.footer-content__right {
+
+}
+
