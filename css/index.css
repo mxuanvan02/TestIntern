@@ -1,4 +1,4 @@
-
+/******************** MAIN PAGE ********************/
 
 
 
@@ -7,7 +7,7 @@
 
 /* Footer */
 #footer {
-  height: 250px;
+  max-height: 500px;
   background-color: var(--color-white-grey);
   padding-bottom: 20px;
 }
@@ -34,7 +34,83 @@
 
 }
 
+.footer-content__left-logo {
+
+}
+
 .footer-content__right {
 
 }
 
+.footer-content__right-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer-content__right-title > a {
+  background-color: var(--color-blue);
+  display: inline-block;
+  border-radius: 35px;
+  padding: 10px 15px;
+  font-size: 18px;
+
+}
+
+/******************** LOGIN PAGE ********************/
+#login {
+
+}
+
+.login__wrap {
+  background-color: var(--color-white-blue);
+  height: 100vh;
+  max-width: 300vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__title {
+  border-bottom: 3px solid var(--color-black);
+  text-shadow: 0 6px 3px var(--color-red);
+  margin-bottom: 30px;
+  width: fit-content;
+}
+
+.login-form {
+  background-color: var(--color-white-pink);
+  padding: 25px;
+  margin-top: 25px;
+}
+
+.login-form__item {
+  margin: 15px 0;
+}
+
+.login-form__label {
+
+}
+
+.login-form__control {
+  height: 25px;
+  width: 250px;
+}
+
+.login-form__check {
+  margin: 15px 0;
+}
+
+.login-form__btn {
+  background-color: var(--color-white-blue);
+}
+
+.login-form__forgot {
+  margin-top: 10px;
+}
+
+.login-form__register {
+  margin-top: 5px;
+}
+
+.login-form__forgot a , .login-form__register a{
+  color: var(--color-black);
+}
