@@ -81,7 +81,6 @@
   background-color: var(--color-pink-pastel);
   padding: 25px;
   margin-top: 25px;
-  border: solid 1px var(--color-white);
 }
 
 .login-form__item {
@@ -103,6 +102,11 @@
 
 .login-form__btn {
   background-color: var(--color-white-blue);
+  border: 1px solid var(--color-white-blue);
+}
+
+.login-form__btn:hover {
+  background-color: var(--color-blue-pastel);
 }
 
 .login-form__forgot {
@@ -113,9 +117,14 @@
   margin-top: 5px;
 }
 
-.login-form__forgot a , .login-form__register a{
+.login-form__forgot a , .login-form__register a {
   color: var(--color-black);
 }
+
+.login-form__forgot a:hover , .login-form__register a:hover {
+  color: var(--color-light-black);
+}
+
 
 /******************** REGISTER PAGE ********************/
 #register {
@@ -162,6 +171,11 @@
 
 .register-form__btn {
   background-color: var(--color-white-blue);
+  border: 1px solid var(--color-white-blue);
+}
+
+.register-form__btn:hover {
+  background-color: var(--color-blue-pastel);
 }
 
 .register-form__login {
@@ -170,4 +184,8 @@
 
 .register-form__login a {
   color: var(--color-black);
+}
+
+.register-form__login a:hover {
+  color: var(--color-light-black);
 }

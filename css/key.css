@@ -1,6 +1,7 @@
 /* Color */
 :root {
   --color-black: #111;
+  --color-light-black: #333333;
   --color-white: #ffffff;
   --color-blue: #386bee;
   --color-grey: rgb(128, 128, 128);
