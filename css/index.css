@@ -22,7 +22,7 @@
 }
 
 .footer-nav-items__item {
-
+  color: var(--color-white);
 }
 
 .footer-content {
@@ -93,7 +93,8 @@
 
 .login-form__control {
   height: 25px;
-  width: 250px;
+  width: 370px;
+  padding: 2px 5px;
 }
 
 .login-form__check {
@@ -162,11 +163,16 @@
 
 .register-form__control {
   height: 25px;
-  width: 250px;
+  width: 370px;
+  padding: 2px 5px;
 }
 
-.register-form__check {
-  margin: 15px 0;
+.helper-text {
+  margin-bottom: 15px;
+}
+
+.helper-text li {
+  list-style: inside;
 }
 
 .register-form__btn {
@@ -189,3 +195,4 @@
 .register-form__login a:hover {
   color: var(--color-light-black);
 }
+
