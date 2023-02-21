@@ -1,5 +1,13 @@
 /******************** MAIN PAGE ********************/
+/* Body */
+.hot-news-list {
+  justify-content: center;
+  column-gap: 20px;
+}
 
+.news-item {
+  max-width: 230px;
+}
 
 
 
