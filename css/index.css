@@ -1,6 +1,107 @@
 /******************** MAIN PAGE ********************/
+/* header*/
+.top-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px 0;
+  align-items: center;
+}
 
 
+.search-container {
+  margin-left: 100px;
+}
+
+.search-container input{
+  padding: 5px 20px;
+  border-radius: 5px ;
+}
+
+.search-container button{
+  padding: 6px 10px;
+  border: none;
+  background: #2f4f4f;
+  color: white;
+  border-radius: 5px ;
+  transition: all 0.25;
+}
+
+
+.widget_user_header {
+  margin-left: 100px;
+}
+
+.widget_user_header button{
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: none;
+  background: #2f4f4f;
+  color: white;
+  transition: all 0.25s;
+}
+
+
+.navbar-menu {
+  width: 980px;
+  background: #2f4f4f;
+  margin:auto;
+  padding: 0px;
+  border-radius: 5px;
+  padding: 7px 100px;
+}
+
+
+.nav-item {
+  color: #fff;
+  padding: 4px 0.75rem;
+  margin: 0 0.25rem;
+  text-decoration: none;
+  margin-right: auto;
+  border-radius: 5px;
+  transition: all 0.25s;
+  display: inline-block;
+}
+
+.search-container button:hover,
+.widget_user_header button:hover,
+.nav-item:hover {
+  outline: none;
+  text-decoration: none;
+  background: #87CEFA;
+  color: #000000;
+}
+
+.menu-giai-tri,
+.menu-xa-hoi {
+  position: absolute;
+  text-align:left;
+  margin-top: 5px;
+  margin-left: -10px;
+  display: none;
+}
+
+.nav-item:hover .menu-giai-tri, 
+.nav-item:hover .menu-xa-hoi{
+  display: block;
+}
+
+.giai-tri,
+.xa-hoi {
+  background: #87CEFA; 
+  display: block;
+}
+
+.giai-tri:hover,
+.xa-hoi:hover {
+  background: #2f4f4f;
+  border-radius: 5px;
+}
+
+.giai-tri a,
+.xa-hoi a{
+  display: block !important;
+  padding: 2px 10px;
+}
 
 
 
