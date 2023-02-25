@@ -164,6 +164,7 @@
   transition: visibility 0.1s;
 }
 
+
 .footer-nav-items__item:hover .footer-nav-items__item-child {
   visibility: visible;
   background-color: var(--color-pink-pastel);
