@@ -124,6 +124,50 @@
 
 .footer-nav-items__item {
   color: var(--color-white);
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.25s;
+}
+
+.footer-nav-items__item:hover {
+  background-color: var(--color-pink-pastel);
+}
+
+.footer-nav-items__item:hover a {
+  color: var(--color-black);
+}
+
+.footer-nav-items__item-child {
+  background-color: var(--color-pink-pastel);
+  border-radius: 5px;
+}
+
+.footer-nav-items__item-child__item a { 
+  color: var(--color-black);
+  display: flex;
+  border-radius: 5px;
+  padding: 3px 5px;
+  transition: color 0.1s;
+}
+
+.footer-nav-items__item-child__item a:hover {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.footer-nav-items__item .footer-nav-items__item-child {
+  visibility: hidden;
+  position: absolute;
+  text-align: left;
+  margin: 10px 0 0 -5px;
+  padding: 5px;
+  transition: visibility 0.1s;
+}
+
+.footer-nav-items__item:hover .footer-nav-items__item-child {
+  visibility: visible;
+  background-color: var(--color-pink-pastel);
+  border-radius: 5px;
 }
 
 .footer-content {
@@ -149,13 +193,19 @@
   margin-bottom: 10px;
 }
 
-.footer-content__right-title > a {
+.footer-content__right-title a {
   background-color: var(--color-blue);
   display: inline-block;
   border-radius: 35px;
   padding: 10px 15px;
   font-size: 18px;
 
+}
+
+.footer-content__right-title a:hover {
+  background-color: var(--color-pink-pastel);
+  border-radius: 35px;
+  color: var(--color-black);
 }
 
 /******************** LOGIN PAGE ********************/
