@@ -10,6 +10,21 @@
 //   userUN.value = ""
 // }
 
+// sticky-navbar
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("navbar-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky-navbar");
+  } else {
+    header.classList.remove("sticky-navbar");
+  }
+}
+///
+
 var storedName = localStorage.getItem('name');
 if (storedName === null) {
   document.getElementById('navLogin').innerHTML = '<a href="/login.html" class="uppercase">Login</a>';

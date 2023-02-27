@@ -18,8 +18,7 @@
 
 /* Flex container */
 .flex-container {
-  display: flex;
-  
+  display: flex; 
 }
 
 .flex-row {

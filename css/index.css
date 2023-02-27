@@ -41,15 +41,18 @@
 }
 
 
-.navbar-menu {
-  width: 980px;
+#navbar-header {
+  width: 100%;
   background: #2f4f4f;
   margin:auto;
   padding: 0px;
-  border-radius: 5px;
-  padding: 7px 100px;
+  padding: 7px 0px;
 }
 
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+}
 
 .nav-item {
   color: #fff;
