@@ -26,10 +26,14 @@ function myFunction() {
 ///
 
 var storedName = localStorage.getItem('name');
+// storedName = null
+document.getElementById('user').innerHTML = 'Xin chào ' + storedName + '!'
 if (storedName === null) {
-  document.getElementById('navLogin').innerHTML = '<a href="/login.html" class="uppercase">Login</a>';
+  document.getElementById('userLoggedIn').style.display = 'none';
+  document.getElementById('loginRegister').style.display = 'block';
 } else {
-  document.getElementById('navLogin').innerHTML = 'Xin chao ' + storedName + '!'
+  document.getElementById('loginRegister').style.display = 'none';
+  document.getElementById('userLoggedIn').style.display = 'block';
 }
 
 function onRegister() {
@@ -60,8 +64,8 @@ function onRegister() {
   } else if (repeatPassword.value != password.value) {
     alert('Nhập lại mật khẩu phải giống mật khẩu');
 
-  } else if (password.value.length > 8) {
-    alert('Mật khẩu tối đa 8 ký tự');
+  } else if (password.value.length < 8) {
+    alert('Mật khẩu ít nhất 8 ký tự');
 
   } else if (!password.value.match(numbers)) {
     alert('Mật khẩu phải chứa ít nhất 1 kí tự số');

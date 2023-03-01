@@ -40,7 +40,6 @@
   transition: all 0.25s;
 }
 
-
 #navbar-header {
   width: 100%;
   background: #2f4f4f;
@@ -122,12 +121,13 @@
 }
 
 .footer-nav-items {
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer-nav-items__item {
   color: var(--color-white);
-  padding: 5px;
+  padding: 4px 0.75rem;
+  margin: 0 0.25rem;
   border-radius: 5px;
   transition: all 0.25s;
 }
@@ -265,19 +265,33 @@
   background-color: var(--color-blue-pastel);
 }
 
-.login-form__forgot {
+.login-form__redirect-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.login-form__to-main-page {
   margin-top: 10px;
+  width: 50%;
+}
+
+.login-form__forgot {
+  margin-top: 5px;
+  width: 50%;
 }
 
 .login-form__register {
   margin-top: 5px;
+  width: 50%;
 }
 
-.login-form__forgot a , .login-form__register a {
+.login-form__forgot a , .login-form__register a, .login-form__to-main-page a {
   color: var(--color-black);
 }
 
-.login-form__forgot a:hover , .login-form__register a:hover {
+.login-form__forgot a:hover , .login-form__register a:hover, .login-form__to-main-page a:hover {
   color: var(--color-light-black);
 }
 
@@ -339,15 +353,29 @@
   background-color: var(--color-blue-pastel);
 }
 
-.register-form__login {
-  margin-top: 10px;
+
+.register-form__redirect-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3rem;
 }
 
-.register-form__login a {
+.register-form__to-main-page {
+  margin-top: 10px;
+  width: 50%;
+}
+
+.register-form__login {
+  margin-top: 5px;
+  width: 50%;
+}
+
+.register-form__login a, .register-form__to-main-page a {
   color: var(--color-black);
 }
 
-.register-form__login a:hover {
+.register-form__login a:hover, .register-form__to-main-page a:hover {
   color: var(--color-light-black);
 }
 
