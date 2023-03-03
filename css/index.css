@@ -105,7 +105,23 @@
   padding: 2px 10px;
 }
 
+/* Main */
+.container {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
 
+.hotsearch img{
+  width: 15px;
+  height: 15px;
+}
+
+.hotsearch a{
+  color: var(--color-red);
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 
 /* Footer */
