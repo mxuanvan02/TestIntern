@@ -11,15 +11,24 @@
   --color-white-pink: #f2bdeb;
   --color-pink-pastel: #F2C2CF;
   --color-blue-pastel: #BBEDF2;
+  --color-dark-slate-gray: #2f4f4f;
+  --color-sky-blue: #87CEFA;
 }
 
 
 /********************* Some key for class *********************/
+/***** Display *****/
+.block-container {
+  display: block;
+}
+
+.none-container {
+  display: none;
+}
 
 /* Flex container */
 .flex-container {
-  display: flex;
-  
+  display: flex; 
 }
 
 .flex-row {

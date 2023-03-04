@@ -10,14 +10,34 @@
 //   userUN.value = ""
 // }
 
-var storedName = localStorage.getItem('name');
+// sticky-navbar
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("navbar-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky-navbar");
+  } else {
+    header.classList.remove("sticky-navbar");
+  }
+}
+///
+var storedName = localStorage.getItem('nameLogin');
+document.getElementById('user').innerHTML = 'Xin chào ' + storedName + '!'
+// storedName = null
 if (storedName === null) {
-  document.getElementById('navLogin').innerHTML = '<a href="/login.html" class="uppercase">Login</a>';
+  document.getElementById('userLoggedIn').style.display = 'none';
+  document.getElementById('loginRegister').style.display = 'block';
 } else {
-  document.getElementById('navLogin').innerHTML = 'Xin chao ' + storedName + '!'
+  document.getElementById('loginRegister').style.display = 'none';
+  document.getElementById('userLoggedIn').style.display = 'block';
 }
 
 function onRegister() {
+  var register = document.getElementById('registerForm')
   var name = document.getElementById('name');
   var email = document.getElementById('email');
   var userName = document.getElementById('userName');
@@ -45,8 +65,8 @@ function onRegister() {
   } else if (repeatPassword.value != password.value) {
     alert('Nhập lại mật khẩu phải giống mật khẩu');
 
-  } else if (password.value.length > 8) {
-    alert('Mật khẩu tối đa 8 ký tự');
+  } else if (password.value.length < 8) {
+    alert('Mật khẩu ít nhất 8 ký tự');
 
   } else if (!password.value.match(numbers)) {
     alert('Mật khẩu phải chứa ít nhất 1 kí tự số');
@@ -58,6 +78,7 @@ function onRegister() {
     alert('Mật khẩu phải chứa ít nhất 1 kí tự thường');
 
   } else {
+    register.setAttribute('action', '/login.html')
     localStorage.setItem('name', name.value)
     localStorage.setItem('email', email.value)
     localStorage.setItem('userName', userName.value);
@@ -68,21 +89,26 @@ function onRegister() {
 
 function onLogin() {
   // localStorage.removeItem('redirecMainPage')
+  var userRemember = localStorage.getItem('rememberMe')
   var storedUserName = localStorage.getItem('userName');
   var storedPassword = localStorage.getItem('password');
+  var userName = localStorage.getItem('name')
 
-  
+  var login = document.getElementById('loginForm')
   var userUserName = document.getElementById('userUserName');
   var userPassword = document.getElementById('userPassword');
   var userRemember = document.getElementById('rememberMe')
   
   localStorage.setItem('rememberMe', userRemember.checked);
   if (userUserName.value == storedUserName && userPassword.value == storedPassword) {
-    localStorage.setItem('redirectMainPage', "/index.html")
+    login.setAttribute('action', '/index.html')
+    localStorage.setItem('nameLogin', userName)
     alert('Bạn đã đăng nhập thành công!');
   } else {
     alert('Đăng nhập lỗi!');
   }
 }
 
+// function loged() {
 
+// }
