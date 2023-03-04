@@ -17,6 +17,14 @@
 
 
 /********************* Some key for class *********************/
+/***** Display *****/
+.block-container {
+  display: block;
+}
+
+.none-container {
+  display: none;
+}
 
 /* Flex container */
 .flex-container {
