@@ -351,3 +351,85 @@
   color: var(--color-light-black);
 }
 
+/* details */
+
+#body-details {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 50px;
+  background-color: var(--color-white-grey);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.breadcrumbs a:hover{
+  color: var(--color-blue);
+}
+
+.breadcrumbs a{
+  color: black;
+  padding: 0 20px;
+}
+
+.details-news-title {
+  padding-top: 30px;
+  padding-left: 50px;
+  
+}
+
+.details-news-title h3{
+   margin-top: 20px;
+   padding-bottom: 10px;
+}
+
+.details-news-content {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.details-news-content p{
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 160%;
+  text-align:justify;
+}
+
+.details-news-content img{
+  width: 100%;
+  height: 480px ;
+}
+
+/*comment*/
+
+.item-comment input{
+  width: 80%;
+  height: 30px;
+  margin-left: 50px;
+  margin-top: 10px;
+  padding-left: 10px ;
+}
+
+.item-comment button{
+  width: 8%;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 5px;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.renderer-comment {
+  border-style: solid;
+  margin: 10px 50px;
+  height: 300px;
+}
+
+.renderer {
+  margin:20px; 
+}
+
