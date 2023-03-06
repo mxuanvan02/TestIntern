@@ -70,7 +70,10 @@
   background: var(--color-sky-blue);
   color: var(--color-black);
 }
+.nav-item:hover a{
+  color: var(--color-black);
 
+}
 .menu-giai-tri,
 .menu-xa-hoi {
   position: absolute;
@@ -85,6 +88,11 @@
   display: block;
 }
 
+.menu-giai-tri a:hover,
+.menu-xa-hoi a:hover{
+  color: var(--color-white);
+}
+
 .giai-tri,
 .xa-hoi {
   background: var(--color-sky-blue); 
@@ -95,6 +103,7 @@
 .xa-hoi:hover {
   background:  var(--color-dark-slate-gray);
   border-radius: 5px;
+  color: var(--color-black);
 }
 
 .giai-tri a,
@@ -430,6 +439,12 @@
 
 /*comment*/
 
+.logo-comment {
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
 .item-comment input{
   width: 80%;
   height: 30px;
@@ -443,13 +458,20 @@
   height: 30px;
   border-radius: 10px;
   margin-left: 5px;
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-slate-gray);
   color: var(--color-white);
+  transition: 0.25s;
 }
 
+.item-comment button:hover{
+  background-color: var(--color-sky-blue);
+  color: var(--color-black);
+}
 .renderer-comment {
   border-style: solid;
-  margin: 10px 50px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
   height: 300px;
 }
 
@@ -457,3 +479,34 @@
   margin:20px; 
 }
 
+/* hot news details*/
+
+.details-hot-news {
+  border-left: ridge 1px;
+  margin-left: 20px;
+}
+.item-hot-news{
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 20px 20px;
+}
+
+.item-hot-news img{
+  width: 90px;
+  height: 90px;
+}
+
+.title-hot-news{
+  color: var(--color-black);
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.title-hot-news:hover{
+  text-decoration: underline;
+}
+
+.logo-hot-news {
+  margin: 20px;
+  font-size: 24px;
+}
