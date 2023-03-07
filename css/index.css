@@ -1,3 +1,4 @@
+/************************************************ PC ************************************************/
 /******************** MAIN PAGE ********************/
 /* header*/
 .top-header {
@@ -112,12 +113,25 @@
   padding: 2px 10px;
 }
 
+.signout {
+  color: var(--color-black);
+  font-size: small;
+  margin-left: 5px;
+}
+
+.signout:hover {
+  color: var(--color-dark-slate-gray);
+}
 
 /* Footer */
 #footer {
   max-height: 500px;
   background-color: var(--color-white-grey);
   padding-bottom: 20px;
+}
+
+.connect {
+  margin: 0 10px;
 }
 
 .footer-nav {
@@ -186,11 +200,19 @@
 }
 
 .footer-content__left {
-
+  margin-right: 40px;
 }
 
 .footer-content__left-logo {
 
+}
+
+.footer-content__left__contact {
+  margin-top: 5px;
+}
+
+.footer-content__left__contact h4 {
+  margin-bottom: 10px;
 }
 
 .footer-content__right {
@@ -199,7 +221,7 @@
 
 .footer-content__right-title {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .footer-content__right-title a {
@@ -215,6 +237,10 @@
   background-color: var(--color-sky-blue);
   border-radius: 35px;
   color: var(--color-black);
+}
+
+.footer-content__right__contact {
+  margin-bottom: 15px;
 }
 
 /******************** LOGIN PAGE ********************/
@@ -510,3 +536,5 @@
   margin: 20px;
   font-size: 24px;
 }
+
+
