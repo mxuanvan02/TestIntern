@@ -1,1 +1,54 @@
 /************************************************ MOBILE ************************************************/
+
+@media(max-width: 425px) {
+  /******************** MAIN PAGE ********************/
+
+  /* Footer */
+  #footer {
+    font-size: 10px;
+  }
+  
+  .footer-content {
+    width: 70%;
+    padding: 5px 0;
+    align-items: start;
+  }
+  
+  .footer-content__left {
+    
+  }
+
+  .footer-content__left__contact {
+    margin-top: 10px;
+  }
+  
+  .footer-content__right {
+    margin-top: 10px;
+  }
+  
+  .footer-content__right-title {
+    margin-bottom: 8px;
+  }
+  
+  .footer-content__right-title a {
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+
+  .footer-content__right__contact {
+    flex-direction: column;
+  }
+  
+  .footer-content__right__contact h4 {
+    text-align: center;
+    margin-top: 3px ;
+  }
+
+  .footer-content__right__contact-left {
+  }
+
+  .footer-content__right__contact-right {
+    margin-left: 0;
+  }
+
+}
