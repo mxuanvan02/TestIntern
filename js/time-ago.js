@@ -24,11 +24,13 @@ function timeSince(date) {
   return Math.floor(seconds) + " second(s) ago";
 }
 
-const timestampEl = document.querySelector(".ownerpost-time a");
-const timeAgoEl = document.querySelector(".time-ago");
+function updateTimeAgo() {
+  const elements = document.querySelectorAll(".news-date");
+  elements.forEach((element) => {
+    const timestamp = new Date(element.getAttribute("datetime"));
+    const timeAgo = timeSince(timestamp);
+    element.textContent = timeAgo;
+  });
+}
 
-const timestamp = new Date("2023-03-03T10:23:00.000Z");
-const timeAgo = timeSince(timestamp);
-
-timestampEl.textContent = "Hungdeptrai"; 
-timeAgoEl.textContent = timeAgo;
+setInterval(updateTimeAgo, 1000);
