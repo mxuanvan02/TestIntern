@@ -17,6 +17,8 @@ window.onscroll = function() {myFunction()};
 var header = document.getElementById("navbar-header");
 var sticky = header.offsetTop;
 
+var signout = '<a href="/login.html" class="signout" onClick="signOut()" >Đăng xuất</a>'
+
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky-navbar");
@@ -24,11 +26,20 @@ function myFunction() {
     header.classList.remove("sticky-navbar");
   }
 }
+<<<<<<< HEAD
 /// Comment
 
 //
+=======
+///
+
+function signOut() {
+  localStorage.removeItem('nameLogin');
+}
+
+>>>>>>> 9e8d591c2fda645559975aa955393eb416624267
 var storedName = localStorage.getItem('nameLogin');
-document.getElementById('user').innerHTML = 'Xin chào ' + storedName + '!'
+document.getElementById('user').innerHTML = 'Xin chào ' + storedName + '! ' + signout
 // storedName = null
 if (storedName === null) {
   document.getElementById('userLoggedIn').style.display = 'none';
