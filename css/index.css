@@ -195,6 +195,12 @@
   border-top: 1px dotted gray;
 }
 
+/* Filter */
+.filter-box {
+  margin: 20px 40%;
+  display: flex;
+}
+
 /* Footer */
 #footer {
   max-height: 500px;

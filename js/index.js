@@ -112,3 +112,26 @@ function onLogin() {
 // function loged() {
 
 // }
+
+function filterFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('filter-select');
+  filter = input.value;
+  ul = document.getElementById("list-latest-news");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].id;
+    if (filter == "tatca") {
+      li[i].style.display = "";
+      continue;
+    }
+    if (a == filter) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
