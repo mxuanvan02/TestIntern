@@ -24,7 +24,9 @@ function myFunction() {
     header.classList.remove("sticky-navbar");
   }
 }
-///
+/// Comment
+
+//
 var storedName = localStorage.getItem('nameLogin');
 document.getElementById('user').innerHTML = 'Xin chào ' + storedName + '!'
 // storedName = null
@@ -112,3 +114,8 @@ function onLogin() {
 // function loged() {
 
 // }
+
+
+
+
+

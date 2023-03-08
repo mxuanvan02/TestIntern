@@ -439,6 +439,10 @@
 
 /*comment*/
 
+.comment {
+  margin-bottom: 20px;
+}
+
 .logo-comment {
   margin-left: 50px;
   margin-top: 20px;
@@ -446,7 +450,7 @@
 }
 
 .item-comment input{
-  width: 80%;
+  width: 50%;
   height: 30px;
   margin-left: 50px;
   margin-top: 10px;
@@ -467,12 +471,9 @@
   background-color: var(--color-sky-blue);
   color: var(--color-black);
 }
-.renderer-comment {
-  border-style: solid;
+#renderer-comment {
   margin-top: 20px;
   margin-left: 50px;
-  margin-bottom: 20px;
-  height: 300px;
 }
 
 .renderer {
