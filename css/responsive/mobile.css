@@ -51,4 +51,65 @@
     margin-left: 0;
   }
 
+  /******************** LOGIN PAGE ********************/
+  #login {
+    font-size: 10px;
+  }
+
+  .login__title {
+    margin-bottom: 15px;
+  }
+
+  .login-form {
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  .login-form__item {
+    margin: 10px 0;
+  }
+
+  .login-form__label {
+
+  }
+
+  .login-form__control {
+    font-size: 8px;
+    height: 15px;
+    width: 180px;
+    padding: 1px 3px;
+  }
+
+  .login-form__check {
+    margin: 10px 0;
+  }
+  
+  .login-form__check-input {
+    width: 9px;
+    height: 9px;
+  }
+
+  .login-form__btn {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+
+  .login-form__redirect-wrap {
+    padding-left: 1.5rem;
+  }
+
+  .login-form__to-main-page {
+    margin-top: 5px;
+    width: 50%;
+  }
+
+  .login-form__forgot {
+    margin-top: 3px;
+    width: 50%;
+  }
+
+  .login-form__register {
+    margin-top: 3px;
+    width: 50%;
+  }
 }
