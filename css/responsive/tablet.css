@@ -47,4 +47,115 @@
     margin-left: 30px;
   }
 
+  /******************** LOGIN PAGE ********************/
+  #login {
+    font-size: 12px;
+  }
+
+  .login__title {
+    margin-bottom: 15px;
+  }
+
+  .login-form {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .login-form__item {
+    margin: 10px 0;
+  }
+
+  .login-form__control {
+    font-size: 10px;
+    height: 20px;
+    width: 250px;
+    padding: 2px 4px;
+  }
+
+  .login-form__check {
+    margin: 10px 0;
+  }
+
+  .login-form__check-input {
+    width: 12px;
+    height: 12px;
+  }
+
+  .login-form__btn {
+    font-size: 10px;
+    padding: 7px 14px;
+  }
+
+  .login-form__redirect-wrap {
+    padding-left: 2rem;
+  }
+
+  .login-form__to-main-page {
+    margin-top: 8px;
+    width: 50%;
+  }
+
+  .login-form__forgot {
+    margin-top: 4px;
+    width: 50%;
+  }
+
+  .login-form__register {
+    margin-top: 4px;
+    width: 50%;
+  }
+
+  /******************** REGISTER PAGE ********************/
+  #register {
+    font-size: 12px;
+  }
+
+  .register__title {
+    margin-bottom: 15px;
+  }
+
+  .register-form {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .register-form__item {
+    margin: 10px 0;
+  }
+
+  .register-form__control {
+    font-size: 10px;
+    height: 20px;
+    width: 250px;
+    padding: 2px 4px;
+  }
+
+  .register-form__check {
+    margin: 10px 0;
+  }
+
+  .register-form__check-input {
+    width: 12px;
+    height: 12px;
+  }
+
+  .register-form__btn {
+    font-size: 10px;
+    padding: 7px 14px;
+  }
+
+  .register-form__redirect-wrap {
+    padding-left: 2rem;
+  }
+
+  .register-form__to-main-page {
+    margin-top: 8px;
+    width: 50%;
+  }
+
+  .register-form__login {
+    margin-top: 4px;
+    width: 50%;
+  }
+
 }

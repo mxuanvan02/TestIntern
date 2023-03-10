@@ -242,7 +242,7 @@
 
 /******************** LOGIN PAGE ********************/
 #login {
-
+  font-size: 14px;
 }
 
 .login__wrap {
@@ -287,6 +287,8 @@
 .login-form__btn {
   background-color: var(--color-white-blue);
   border: 1px solid var(--color-white-blue);
+  border-radius: 25px;
+  padding: 10px 20px;
 }
 
 .login-form__btn:hover {
@@ -375,6 +377,8 @@
 .register-form__btn {
   background-color: var(--color-white-blue);
   border: 1px solid var(--color-white-blue);
+  border-radius: 25px;
+  padding: 10px 20px;
 }
 
 .register-form__btn:hover {
