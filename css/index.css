@@ -1,9 +1,10 @@
+/************************************************ PC ************************************************/
 /******************** MAIN PAGE ********************/
 /* header*/
 .top-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
   align-items: center;
 }
 
@@ -39,11 +40,11 @@
 }
 
 #navbar-header {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   background:  var(--color-dark-slate-gray);
-  margin:auto;
-  padding: 0px;
-  padding: 7px 0px;
+  padding: 5px 100px;
 }
 
 .sticky-navbar {
@@ -53,13 +54,11 @@
 
 .nav-item {
   color: var(--color-white);
-  padding: 4px 0.75rem;
-  margin: 0 0.25rem;
+  padding: 5px 10px;
   text-decoration: none;
-  margin-right: auto;
   border-radius: 5px;
   transition: all 0.25s;
-  display: inline-block;
+
 }
 
 .search-container button:hover,
@@ -70,12 +69,15 @@
   background: var(--color-sky-blue);
   color: var(--color-black);
 }
+.nav-item:hover a{
+  color: var(--color-black);
 
+}
 .menu-giai-tri,
 .menu-xa-hoi {
   position: absolute;
   text-align:left;
-  margin-top: 5px;
+  margin-top: 7px;
   margin-left: -10px;
   display: none;
 }
@@ -83,6 +85,11 @@
 .nav-item:hover .menu-giai-tri, 
 .nav-item:hover .menu-xa-hoi{
   display: block;
+}
+
+.menu-giai-tri a:hover,
+.menu-xa-hoi a:hover{
+  color: var(--color-white);
 }
 
 .giai-tri,
@@ -94,7 +101,7 @@
 .giai-tri:hover,
 .xa-hoi:hover {
   background:  var(--color-dark-slate-gray);
-  border-radius: 5px;
+  color: var(--color-black);
 }
 
 .giai-tri a,
@@ -202,11 +209,25 @@
   display: flex;
 }
 
+.signout {
+  color: var(--color-black);
+  font-size: small;
+  margin-left: 5px;
+}
+
+.signout:hover {
+  color: var(--color-dark-slate-gray);
+}
+
 /* Footer */
 #footer {
   max-height: 500px;
   background-color: var(--color-white-grey);
   padding-bottom: 20px;
+}
+
+.connect {
+  margin: 0 10px;
 }
 
 .footer-nav {
@@ -275,11 +296,19 @@
 }
 
 .footer-content__left {
-
+  margin-right: 40px;
 }
 
 .footer-content__left-logo {
 
+}
+
+.footer-content__left__contact {
+  margin-top: 5px;
+}
+
+.footer-content__left__contact h4 {
+  margin-bottom: 10px;
 }
 
 .footer-content__right {
@@ -288,7 +317,7 @@
 
 .footer-content__right-title {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .footer-content__right-title a {
@@ -306,9 +335,13 @@
   color: var(--color-black);
 }
 
+.footer-content__right__contact {
+  margin-bottom: 15px;
+}
+
 /******************** LOGIN PAGE ********************/
 #login {
-
+  font-size: 14px;
 }
 
 .login__wrap {
@@ -353,6 +386,8 @@
 .login-form__btn {
   background-color: var(--color-white-blue);
   border: 1px solid var(--color-white-blue);
+  border-radius: 25px;
+  padding: 10px 20px;
 }
 
 .login-form__btn:hover {
@@ -441,6 +476,8 @@
 .register-form__btn {
   background-color: var(--color-white-blue);
   border: 1px solid var(--color-white-blue);
+  border-radius: 25px;
+  padding: 10px 20px;
 }
 
 .register-form__btn:hover {
@@ -528,8 +565,18 @@
 
 /*comment*/
 
+.comment {
+  margin-bottom: 20px;
+}
+
+.logo-comment {
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
 .item-comment input{
-  width: 80%;
+  width: 50%;
   height: 30px;
   margin-left: 50px;
   margin-top: 10px;
@@ -541,17 +588,54 @@
   height: 30px;
   border-radius: 10px;
   margin-left: 5px;
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-slate-gray);
   color: var(--color-white);
+  transition: 0.25s;
 }
 
-.renderer-comment {
-  border-style: solid;
-  margin: 10px 50px;
-  height: 300px;
+.item-comment button:hover{
+  background-color: var(--color-sky-blue);
+  color: var(--color-black);
+}
+#renderer-comment {
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
 .renderer {
   margin:20px; 
 }
+
+/* hot news details*/
+
+.details-hot-news {
+  border-left: ridge 1px;
+  margin-left: 20px;
+}
+.item-hot-news{
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 20px 20px;
+}
+
+.item-hot-news img{
+  width: 90px;
+  height: 90px;
+}
+
+.title-hot-news{
+  color: var(--color-black);
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.title-hot-news:hover{
+  text-decoration: underline;
+}
+
+.logo-hot-news {
+  margin: 20px;
+  font-size: 24px;
+}
+
 
