@@ -196,7 +196,8 @@
 }
 
 /* Filter */
-.filter-box {
+.filter-box, 
+.filter-date {
   margin: 20px 40%;
   display: flex;
 }

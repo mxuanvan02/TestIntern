@@ -114,21 +114,40 @@ function onLogin() {
 // }
 
 function filterFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
+  var input, filter, ul, li, a, i;
   input = document.getElementById('filter-select');
   filter = input.value;
   ul = document.getElementById("list-latest-news");
   li = ul.getElementsByTagName('li');
 
-  // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
     a = li[i].id;
     if (filter == "tatca") {
       li[i].style.display = "";
       continue;
     }
-    if (a == filter) {
+    if (a.indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+function filterDate() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById('filter-date');
+  filter = input.value;
+  ul = document.getElementById("list-latest-news");
+  li = ul.getElementsByTagName('li');
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i].id;
+    if (filter == "") {
+      li[i].style.display = "";
+      continue;
+    }
+    if (a.indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
