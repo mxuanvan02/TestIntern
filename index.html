@@ -60,9 +60,131 @@
       </ul>
     </nav>
   </header>
-  <section id="">
-    
-</section>
+
+  <section id="body">
+    <div class="body-contents">
+
+      <div class="hot-news">
+        <div class="hot-news-label"><img src="images/fire.png" alt="fire" class="hot-news-icon">SỰ KIỆN NÓNG</div>
+        <div class="hot-news-list flex-container flex-row">
+          <div class="news-item flex-container">
+            <img src="images/news/news_1.jpg" alt="news 1" class="news-img">
+            <p class="news-title">Đàm Vĩnh Hưng gắn bó 25 năm với Vũ Hà: 
+              Những bí mật "động trời" lần đầu hé lộ</p>
+            <p class="news-author">Art Times</p>
+            <time class="news-date" datetime="2023-02-21T14:00:00.000Z">2023-02-21T14:00:00.000Z</time>
+          </div>
+          <div class="news-item flex-container">
+            <img src="images/news/news_2.jpg" alt="news 2" class="news-img">
+            <p class="news-title">Cô gái bị bắt nạt đến chết vì nhuộm tóc hồng</p>
+            <p class="news-author">Zing</p>
+            <time class="news-date" datetime="2023-02-21T14:00:00.000Z">2023-02-21T14:00:00.000Z</time>
+          </div>
+          <div class="news-item flex-container">
+            <img src="images/news/news_3.jpg" alt="news 3" class="news-img">
+            <p class="news-title">Lái xe Porsche 'nói to làm văng nước bọt' 
+              chứ không nhổ bọt vào xe Hyundai</p>
+            <p class="news-author">VTC News</p>
+            <time class="news-date" datetime="2023-02-21T14:00:00.000Z">2023-02-21T14:00:00.000Z</time>
+          </div>
+          <div class="news-item flex-container">
+            <img src="images/news/news_4.jpg" alt="news 4" class="news-img">
+            <p class="news-title">Cảnh sát giải cứu bé gái định nhảy từ 
+              tầng 15 chung cư xuống đất</p>
+            <p class="news-author">VietNamNet</p>
+            <time class="news-date" datetime="2023-02-21T14:00:00.000Z">2023-02-21T14:00:00.000Z</time>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-box">
+        <p>Lọc theo thể loại: </p>
+        <select id="filter-select" onchange="filterFunction()">
+          <option value="tatca">Tất cả</option>
+          <option value="giaitri">Giải trí</option>
+          <option value="doisong">Đời sống</option>
+          <option value="xahoi">Xã hội</option>
+          <option value="dep">Đẹp</option>
+          <option value="suckhoe">Sức khoẻ</option>
+          <option value="thegioi">Thế giới</option>
+          <option value="muasam">Mua sắm</option>
+          <option value="giaoduc">Giáo dục</option>
+          <option value="thethao">Thể thao</option>
+        </select>
+      </div>
+
+      <div class="filter-date">
+        <p>Lọc theo thời gian: </p>
+        <input type="text" placeholder="yyyy-mm-dd" id="filter-date" onkeyup="filterDate()">
+      </div>
+
+      <div class="group-news-other">
+        <ul class="other-news" id="list-latest-news">
+          <li class="other-news-item" id="xahoi2023-02-27">
+              <img src="images/tancuong.png" alt="ngoại trưởng tần cương trung quốc" class="news-img">
+              <div class="other-news-contents">
+                <p class="news-title"><b>Trung Quốc nói 'bàn tay vô hình' đang thao túng xung đột Ukraine</b></p>
+                <p class="news-author">VnExpress</p>
+                <time class="news-date" datetime="2023-02-27T14:00:00.000Z">2023-02-27T14:00:00.000Z</time>
+                <p class="short-contents-other">Ngoại trưởng Trung Quốc Tần Cương cho 
+                rằng một "bàn tay vô hình" dường như đang điều khiển khủng hoảng Ukraine</p>
+              </div>
+            </li>
+          <li class="other-news-item" id="doisong2023-02-26">
+              <img src="images/thanhniencuunguoi.png" alt="ảnh thanh niên cứu người" class="news-img">
+              <div class="other-news-contents">
+                <p class="news-title"><b>Chàng trai 17 tuổi nhảy hồ Xuân Hương cứu người kẹt trong ô tô:
+                  'Quà' 8.3 đặc biệt cho mẹ</b></p>
+                <p class="news-author">Báo Thanh Niên</p>
+                <time class="news-date" datetime="2023-02-26T14:00:00.000Z">2023-02-26T14:00:00.000Z</time>
+                <p class="short-contents-other">Câu chuyện về chàng trai 17 tuổi Nguyễn Trung Hiếu 
+                  (quê Long An) bất chấp trời đêm giá lạnh nhảy xuống hồ Xuân Hương để cứu người</p>
+              </div>
+            </li>
+          <li class="other-news-item" id="thegioi2023-02-25">
+              <img src="images/haibesongsinh.png" alt="ảnh hai bé song sinh" class="news-img">
+              <div class="other-news-contents">
+                <p class="news-title"><b>Hai em bé sinh non nhất thế giới đón sinh nhật đầu tiên</b></p>
+                <p class="news-author">Báo Tuổi Trẻ</p>
+                <time class="news-date" datetime="2023-02-25T14:00:00.000Z">2023-02-25T14:00:00.000Z</time>
+                <p class="short-contents-other">Cặp song sinh người Canada Adiah Nadarajah (bé gái) và
+                  Adrial Nadarajah (bé trai) đã đón sinh nhật đầu tiên của mình theo một cách không thể ấn tượng hơn</p>
+              </div>
+            </li>
+          <li class="other-news-item" id="xahoi2023-02-24">
+              <img src="images/truongsa.png" alt="ảnh chiến sĩ trường sa" class="news-img">
+              <div class="other-news-contents">
+                <p class="news-title"><b>Dòng máu anh hùng: 'Tôi vẫn muốn quay lại Trường Sa'</b></p>
+                <p class="news-author">Báo Thanh Niên</p>
+                <time class="news-date" datetime="2023-02-24T14:00:00.000Z">2023-02-24T14:00:00.000Z</time>
+                <p class="short-contents-other">64 liệt sĩ hy sinh trong trận chiến đấu bảo vệ Trường 
+                  Sa (Khánh Hòa) ngày 14.3.1988, nhiều người đã có vợ con. 35 năm sau, những người
+                   thân của các liệt sĩ đã vượt qua mọi khó khăn vất vả, vươn lên và sống kiên cường…</p>
+              </div>
+            </li>
+        </ul>
+        <div class="news-bar">
+          <h2 class="title-news-bar">Du lịch</h2>
+          <div class="news-item flex-container">
+            <img src="images/nuocngoaixintien.png" alt="người nước ngoài xin tiền để đi du lịch" class="news-img">
+            <p class="news-title">Hai người nước ngoài đứng trên đường phố Đà Nẵng xin 'cứu giúp'</p>
+            <p class="news-author">Vienamnet</p>
+            <time class="news-date" datetime="2023-02-23T14:00:00.000Z">2023-02-23T14:00:00.000Z</time>
+          </div>
+          <div class="crossbar"></div>
+          <h2 class="title-news-bar">Giải trí</h2>
+          <div class="news-item flex-container">
+            <img src="images/bangkieu.png" alt="ca sĩ Bằng Kiều" class="news-img">
+            <p class="news-title">Bằng Kiều: 'Khán giả của tôi đều là người giàu'</p>
+            <p class="news-author">vnexpress</p>
+            <time class="news-date" datetime="2023-02-22T14:00:00.000Z">2023-02-22T14:00:00.000Z</time>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
 
   <footer id="footer">
     <!-- <div class="footer-nav">
@@ -128,5 +250,6 @@
     <p class="footer-license text-center">Giấy phép hoạt động số 2441/GP - TTĐT | Do SỞ THÔNG TIN VÀ TRUYỀN THÔNG THÀNH PHỐ HÀ NỘI cấp ngày 20/6/2018</p>
   </footer>
   <script type ="text/javascript" src="js/index.js"></script>
+  <script src="js/time-ago.js"></script>
 </body>
 </html>
