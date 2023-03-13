@@ -575,6 +575,7 @@
 .details-news-content img{
   width: 100%;
   height: 480px ;
+  object-fit: cover;
 }
 
 /*comment*/
@@ -631,21 +632,22 @@
 
 
 .item-hot-news{
-  display:grid;
-  grid-template-columns: 1fr 3fr;
+  display:flex;
   margin: 20px 20px;
 }
 
 .item-hot-news img{
   width: 90px;
   height: 90px;
+  object-fit:cover;
 }
 
 .title-hot-news{
   color: var(--color-black);
   margin-left: 20px;
-  font-size: 14px;
+  font-size: 0.85rem;
 }
+
 
 .title-hot-news:hover{
   text-decoration: underline;

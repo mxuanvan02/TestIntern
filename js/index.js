@@ -122,7 +122,7 @@ function onLogin() {
 
 function filterFunction() {
   var input, filter, ul, li, a, i;
-  input = document.getElementById('filter-select');
+  input = document.getElementById('filter-select',);
   filter = input.value;
   ul = document.getElementById("list-latest-news");
   li = ul.getElementsByTagName('li');
