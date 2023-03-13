@@ -78,7 +78,7 @@
 .menu-xa-hoi {
   position: absolute;
   text-align:left;
-  margin-top: 7px;
+  margin-top: 10px;
   margin-left: -10px;
   display: none;
 }
@@ -86,10 +86,13 @@
 .menu-giai-tri::before,
 .menu-xa-hoi::before {
   position: absolute;
-  width: 5px;
-  content: "";
+  width: 183px;
+  height: 10px;
+  top: -10px;
+  content: " ";
   display: block;
 }
+
 .nav-item:hover .menu-giai-tri, 
 .nav-item:hover .menu-xa-hoi{
   display: block;
@@ -543,7 +546,9 @@
   color: black;
   padding: 0 10px;
 }
-
+.breadcrumbs p{
+  margin-bottom: 0;
+}
 .details-news-title {
   padding-top: 30px;
   padding-left: 50px;
