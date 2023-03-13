@@ -15,6 +15,7 @@
 .search-container input{
   padding: 5px 20px;
   border-radius: 5px ;
+  outline: 0;
 }
 
 .search-container button{
@@ -82,6 +83,13 @@
   display: none;
 }
 
+.menu-giai-tri::before,
+.menu-xa-hoi::before {
+  position: absolute;
+  width: 5px;
+  content: "";
+  display: block;
+}
 .nav-item:hover .menu-giai-tri, 
 .nav-item:hover .menu-xa-hoi{
   display: block;
@@ -424,7 +432,8 @@
   margin-left: 50px;
   background-color: var(--color-white-grey);
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 0;
+  align-items: center;
 }
 
 .breadcrumbs a:hover{
@@ -433,7 +442,7 @@
 
 .breadcrumbs a{
   color: black;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .details-news-title {
@@ -482,11 +491,13 @@
   margin-left: 50px;
   margin-top: 10px;
   padding-left: 10px ;
+  outline: 0;
 }
 
 .item-comment button{
   width: 8%;
   height: 30px;
+  border: none;
   border-radius: 10px;
   margin-left: 5px;
   background-color: var(--color-dark-slate-gray);
@@ -513,6 +524,8 @@
   border-left: ridge 1px;
   margin-left: 20px;
 }
+
+
 .item-hot-news{
   display:grid;
   grid-template-columns: 1fr 3fr;
@@ -538,5 +551,6 @@
   margin: 20px;
   font-size: 24px;
 }
+
 
 

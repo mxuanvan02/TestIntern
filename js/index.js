@@ -17,6 +17,7 @@ window.onscroll = function() {myFunction()};
 var header = document.getElementById("navbar-header");
 var sticky = header.offsetTop;
 
+var signout = '<a href="/login.html" class="signout" onClick="signOut()" >Đăng xuất</a>'
 
 function myFunction() {
   if (window.pageYOffset > sticky) {
@@ -26,9 +27,6 @@ function myFunction() {
   }
 }
 ///
-
-
-var signout = '<a href="/login.html" class="signout" onClick="signOut()" >Đăng xuất</a>'
 
 function signOut() {
   localStorage.removeItem('nameLogin');
