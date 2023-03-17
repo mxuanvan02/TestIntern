@@ -155,6 +155,7 @@
 }
 
 .news-title {
+  color: var(--color-black);
   flex-grow: 1;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -580,7 +581,6 @@
 
 .details-news-content img{
   width: 100%;
-  height: 480px ;
   object-fit: cover;
 }
 
