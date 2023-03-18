@@ -4,12 +4,16 @@
 .top-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 10px 100px;
   align-items: center;
 }
 
+.haeder-logo h1{
+  margin-bottom: 0;
+}
+
 .search-container {
-  margin-left: 100px;
+
 }
 
 .search-container input{
@@ -28,7 +32,8 @@
 }
 
 .widget_user_header {
-  margin-left: 100px;
+  display: flex;
+
 }
 
 .widget_user_header button{
@@ -37,15 +42,16 @@
   border: none;
   background:  var(--color-dark-slate-gray);
   color: var(--color-white);
-  transition: all 0.25s;
+
 }
+
 
 #navbar-header {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
   width: 100%;
   background:  var(--color-dark-slate-gray);
-  padding: 5px 200px;
+  padding: 5px;
 }
 
 .sticky-navbar {
@@ -149,6 +155,7 @@
 }
 
 .news-title {
+  color: var(--color-black);
   flex-grow: 1;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -575,7 +582,6 @@
 
 .details-news-content img{
   width: 100%;
-  height: 480px ;
   object-fit: cover;
 }
 
