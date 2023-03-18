@@ -235,6 +235,7 @@
   max-height: 500px;
   background-color: var(--color-white-grey);
   padding-bottom: 20px;
+  border-top: 5px solid var(--color-dark-slate-gray);
 }
 
 .connect {
