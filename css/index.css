@@ -157,7 +157,9 @@
   margin-top: 5px;
   margin-bottom: 10px;
 }
-
+.news-img {
+  object-fit: cover;
+}
 .news-title:hover,
 .news-img::before {
   color: blue;

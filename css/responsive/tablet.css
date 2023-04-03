@@ -171,11 +171,12 @@
   .hr-mobile {
     display: block;
   }
+  
 }
 
 @media (max-width:960px){
   .hot-news-list {
-    padding: 0px 150px;
+    padding: 0px 80px;
   }
   .group-news-other {
     display:block ;
@@ -190,7 +191,10 @@
     width: 110px;
     height: 110px;
     object-fit: cover;
-    padding-top: 10px;
+
+  }
+  .news-item {
+    max-width: 310px;
   }
 
 }
